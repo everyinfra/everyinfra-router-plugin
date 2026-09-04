@@ -1,0 +1,34 @@
+{
+  "repository": "everyinfra/everyinfra-router-plugin",
+  "visibility": "public",
+  "publicationStatus": "authorized-initial-publication",
+  "plugin": "everyinfra-router",
+  "skill": "everyinfra",
+  "displayName": "EveryInfra Router",
+  "description": "EveryInfra infrastructure API routing skill for Codex and Claude Code: discover the right data, search, AI, captcha, email, number or proxy workflow before execution.",
+  "homepage": "https://everyinfra.com",
+  "topics": [
+    "everyinfra",
+    "agent-plugin",
+    "infrastructure-api",
+    "agent-routing",
+    "mcp",
+    "api-discovery",
+    "developer-tools",
+    "codex",
+    "claude-code",
+    "agent-skills"
+  ],
+  "searchIntent": "Choose an infrastructure API for an AI agent workflow",
+  "readmeTitle": "EveryInfra Router — Choose the right infrastructure API for an agent task",
+  "keywordResearch": "Qualitative intent mapping; no search volume, difficulty or ranking estimates.",
+  "transport": "mixed",
+  "version": "0.1.0",
+  "source": {
+    "repository": "everyinfra/everyinfra-agent-plugins",
+    "commit": "78d3fd694244529e5062c51006fc10ef0de9dc87",
+    "path": "plugins/everyinfra/skills/everyinfra/SKILL.md",
+    "sha256": "dab691ea30bbe80ef169d82dad143ccee4b6fd1f9761c245e101bb4232e3b81c"
+  },
+  "definition": "EveryInfra Router is a standalone agent skill for selecting the right EveryInfra infrastructure API. It maps a requested outcome to structured data, web search, AI, authorized captcha, email, phone-number or proxy workflows, then checks the applicable MCP or REST contract before execution."
+}

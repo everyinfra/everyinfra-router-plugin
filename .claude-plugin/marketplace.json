@@ -1,0 +1,16 @@
+{
+  "name": "everyinfra-router-plugin",
+  "owner": {
+    "name": "EveryInfra",
+    "url": "https://everyinfra.com"
+  },
+  "plugins": [
+    {
+      "name": "everyinfra-router",
+      "source": "./plugins/everyinfra-router",
+      "description": "EveryInfra infrastructure API routing skill for Codex and Claude Code: discover the right data, search, AI, captcha, email, number or proxy workflow before execution.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "EveryInfra infrastructure API routing skill for Codex and Claude Code: discover the right data, search, AI, captcha, email, number or proxy workflow before execution."
+}

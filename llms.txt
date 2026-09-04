@@ -1,0 +1,16 @@
+# EveryInfra Router
+
+> EveryInfra Router is a standalone agent skill for selecting the right EveryInfra infrastructure API. It maps a requested outcome to structured data, web search, AI, authorized captcha, email, phone-number or proxy workflows, then checks the applicable MCP or REST contract before execution.
+
+This is a documentation navigation index, not a ranking or model-ingestion guarantee.
+
+## Documentation
+
+- [Overview](README.md): use cases, limits and FAQ.
+- [简体中文](README.zh-CN.md): Chinese introduction and safe starting point.
+- [Setup](docs/setup.md): host installation and service prerequisites.
+- [Workflow](docs/workflow.md): execution and acceptance criteria.
+- [Prompts](examples/prompts.md): illustrative bounded requests.
+- [Security](SECURITY.md): permissions and secret handling.
+
+- [Capability reference](docs/reference.md): identity, scope, prerequisites and evidence sources.
