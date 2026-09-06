@@ -1,7 +1,7 @@
 {
   "name": "everyinfra-router",
-  "version": "0.1.0",
-  "description": "EveryInfra infrastructure API routing skill for Codex and Claude Code: discover the right data, search, AI, captcha, email, number or proxy workflow before execution.",
+  "version": "0.2.0",
+  "description": "EveryInfra API router for data, source-bound cleanup, search, AI, captcha, email, number and proxy workflows with live discovery.",
   "author": {
     "name": "EveryInfra",
     "url": "https://everyinfra.com"
@@ -16,6 +16,7 @@
     "agent-routing",
     "mcp",
     "api-discovery",
+    "data-cleanup",
     "developer-tools",
     "codex",
     "claude-code",
@@ -24,8 +25,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "EveryInfra Router",
-    "shortDescription": "Choose the right infrastructure API for an agent task",
-    "longDescription": "EveryInfra Router is a standalone agent skill for selecting the right EveryInfra infrastructure API. It maps a requested outcome to structured data, web search, AI, authorized captcha, email, phone-number or proxy workflows, then checks the applicable MCP or REST contract before execution. Use this skill when you know the outcome but not the product to call. It is a dispatch guide, not a replacement for a data source, an email transport or a proxy client.",
+    "shortDescription": "Route data, cleanup, search and agent infrastructure APIs",
+    "longDescription": "EveryInfra Router selects among structured data, source-bound cleanup, web search, AI, authorized captcha, email, phone-number and proxy workflows, then checks the live MCP or REST contract before execution. It keeps discovery, account entitlement and external actions separate.",
     "developerName": "EveryInfra",
     "category": "Engineering",
     "capabilities": [
@@ -42,8 +43,8 @@
     "logoDark": "./assets/logo-dark.svg",
     "defaultPrompt": [
       "I need public data about a set of businesses. Decide whether this is an EveryData or EverySearch task; inspect capabilities before proposing calls.",
-      "Plan a workflow to find current product documentation and draft an email summary. Do not send the email or buy anything.",
-      "This request combines text classification and a proxy. Identify the required products and permission boundaries without placing an order."
+      "For this EveryData result, discover source-bound cleanup and show selectable fields before any submit.",
+      "Plan a workflow to find current product documentation and draft an email summary. Do not send the email or buy anything."
     ]
   }
 }

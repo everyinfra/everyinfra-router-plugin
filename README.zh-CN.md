@@ -1,6 +1,9 @@
 # EveryInfra Router：基础设施能力路由
 
-[English](README.md) · [安装配置](docs/setup.md) · [工作流程](docs/workflow.md) · [提示词示例](examples/prompts.md) · [能力与来源](docs/reference.md)
+[English](README.md) · [安装配置](docs/setup.md) · [工作流程](docs/workflow.md) · [清洗转型](docs/migration.zh-CN.md) · [提示词示例](examples/prompts.md) · [能力与来源](docs/reference.md)
+
+> **来源绑定清洗已上线：**生产已发现2个清洗工具、共15个操作，既有`everyinfra_chat`继续兼容。
+> Router仍先做实时发现；账户资格与剩余额度只认权益响应。
 
 客户知道自己想完成什么，却未必知道该调用哪条产品线。Router 把采集、检索、文本处理和对外动作拆开，先选对能力，再检查运行时目录、权限与费用边界。
 
@@ -43,3 +46,9 @@ python3 scripts/validate.py
 上述命令只做本地包结构、文档链接、元数据与示例校验，不产生付费调用。更具体的能力限制、错误处理和结果标准见[英文说明](README.md)与[工作流程](docs/workflow.md)。
 
 GitHub 源码公开不等于已在官方插件市场上架，也不代表 API 端到端测试已通过。维护者为 [EveryInfra](https://everyinfra.com)，许可证为 [Apache-2.0](LICENSE)。
+
+普通自带文本在实时schema仍支持时可以继续走EveryAI；EveryData结果使用独立来源绑定清洗契约。
+若宿主未发现该工具则明确返回不可用。完整决策见[清洗转型路由说明](docs/migration.zh-CN.md)。
+
+当前路由是符合条件直客账户的有界站内清洗权益，不是无限免费Gemini。15个操作包含字段发现、
+任务列表和按原幂等键找回任务；Router仍必须先读生产`tools/list`、实时schema和服务端权益状态。
