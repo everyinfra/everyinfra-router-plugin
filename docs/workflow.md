@@ -4,14 +4,11 @@
 
 A routing decision with one product per operation, the discovery step, required inputs, side effects and any blocked prerequisite. A plan is not proof that the later operations have succeeded.
 
-## Cleanup transition decision
+## Text processing
 
-Separate ordinary user-supplied text from an EveryData result. The former may use the current
-EveryAI compatibility route when live discovery permits it. The latter must wait for the distinct,
-source-bound cleanup contract; if discovery does not expose it, report the route as unavailable and
-do not fall back to generic chat. Start with MCP `tools/list`, then read the current input schemas.
-If cleanup is live, route reads through entitlement/source/field/recipe discovery and preview before
-any separate activation or submission. See the [migration guide](migration.md).
+Route cleaning, labeling, extraction and summaries, including records collected with EveryData, to
+EveryAI (`everyinfra_chat`), which is free for accounts that have topped up. The former data
+cleanup tools were retired on 2026-10-09.
 
 ## Execution contract
 

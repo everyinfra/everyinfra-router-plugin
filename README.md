@@ -2,11 +2,13 @@
 
 ![EveryInfra H2 shared-base mark](plugins/everyinfra-router/assets/logo.svg)
 
-[简体中文](README.zh-CN.md) · [Setup](docs/setup.md) · [Workflow](docs/workflow.md) · [Cleanup transition](docs/migration.md) · [Prompts](examples/prompts.md) · [Capability reference](docs/reference.md) · [API documentation](https://api.everyinfra.com/docs)
+[简体中文](README.zh-CN.md) · [Setup](docs/setup.md) · [Workflow](docs/workflow.md) · [Prompts](examples/prompts.md) · [Capability reference](docs/reference.md) · [API documentation](https://api.everyinfra.com/docs)
 
-> **Source-bound cleanup is live:** Production advertises two cleanup tools with 15 operations while
-> the existing `everyinfra_chat` compatibility path remains active. The Router still begins with
-> live discovery; account eligibility and remaining quota come only from the entitlement response.
+> **Update (2026-10-09):** the two data cleanup tools have been retired. To clean, classify,
+> extract or summarize the data you collect, use the [AI API](https://everyinfra.com/en/products/ai):
+> OpenAI-compatible `POST /api/v1/chat/completions`, also available as the MCP tool
+> `everyinfra_chat`. It is free for accounts that have topped up, with per-minute limits that follow
+> cumulative top-ups.
 
 EveryInfra Router is a standalone agent skill for selecting the right EveryInfra infrastructure API. It maps a requested outcome to structured data, web search, AI, authorized captcha, email, phone-number or proxy workflows, then checks the applicable MCP or REST contract before execution.
 
@@ -77,17 +79,12 @@ The router instructions are self-contained. Executing a chosen service requires 
 
 The skill reports the denied scope or configuration. It must not broaden permissions or substitute a different service silently.
 
-### How does Router handle the cleanup transition?
+### Where does text processing go?
 
-Ordinary supplied text can continue through the live EveryAI compatibility contract. An EveryData
-result uses the separate source-bound cleanup contract after live discovery confirms it. If a host
-cannot discover it, Router reports that path as unavailable instead of falling back to generic chat. See the
-[migration guide](docs/migration.md).
-
-The live route is a bounded included benefit for qualifying direct accounts, not unlimited
-free Gemini. Its 15 operations include source-field discovery, task listing and original-task
-recovery by idempotency key. The Router must still call `tools/list`, use the returned schemas and
-read the server's entitlement response before describing eligibility, remaining quota or charge.
+Router sends cleaning, labeling, extraction and summaries to the AI API (`everyinfra_chat` /
+`POST /api/v1/chat/completions`), free for accounts that have topped up with per-minute limits that
+follow cumulative top-ups, and keeps paid data calls, CAPTCHA solves and outgoing actions behind
+explicit approval.
 
 ## Validate and contribute
 

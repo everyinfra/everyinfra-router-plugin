@@ -5,7 +5,7 @@
   "plugin": "everyinfra-router",
   "skill": "everyinfra",
   "displayName": "EveryInfra Router",
-  "description": "EveryInfra API router for data, source-bound cleanup, search, AI, captcha, email, number and proxy workflows with live discovery.",
+  "description": "EveryInfra API router for data, search, AI, captcha, email, number and proxy workflows with live discovery.",
   "homepage": "https://everyinfra.com",
   "topics": [
     "everyinfra",
@@ -14,22 +14,21 @@
     "agent-routing",
     "mcp",
     "api-discovery",
-    "data-cleanup",
     "developer-tools",
     "codex",
     "claude-code",
     "agent-skills"
   ],
-  "searchIntent": "Choose an infrastructure API or source-bound EveryData cleanup route for an AI agent workflow",
+  "searchIntent": "Choose an infrastructure API for an AI agent workflow",
   "readmeTitle": "EveryInfra Router — Choose the right infrastructure API for an agent task",
   "keywordResearch": "Qualitative intent mapping; no search volume, difficulty or ranking estimates.",
   "transport": "mixed",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "source": {
     "repository": "everyinfra/everyinfra-agent-plugins",
-    "commit": "3dca476c56cb47e97b0174faa3c512bca9b41dcf",
+    "commit": "2f6383e4c4c97873d92c9233433d87072daa654f",
     "path": "plugins/everyinfra/skills/everyinfra/SKILL.md",
-    "sha256": "2fc7febd74641b3a9ec8440ef03b8936e3fbed886463cd9aea42c51cb1fa9ffc"
+    "sha256": "bfe802600262f9834bf91832cf590fc6c1a9ab2b9d298460195e8a5038af1ca5"
   },
-  "definition": "EveryInfra Router selects among structured data, source-bound cleanup, search, AI, captcha, email, number and proxy workflows, then checks the live MCP or REST contract before execution."
+  "definition": "EveryInfra Router selects among structured data, search, AI, captcha, email, number and proxy workflows, then checks the live MCP or REST contract before execution."
 }

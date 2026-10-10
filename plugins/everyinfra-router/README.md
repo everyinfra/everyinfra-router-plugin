@@ -4,13 +4,8 @@ Route agent tasks to the right EveryInfra API: structured data, web search, AI, 
 
 This package contains only `everyinfra`. It is a skills-only plugin: configure the approved EveryInfra service connection in the host before using it. It does not install other skills, register a new MCP server or broaden API permissions.
 
-During the EveryAI transition, ordinary supplied text may use the live general chat contract.
-EveryData result cleanup uses the separate live source-bound route and must not be simulated by
-generic chat. Account eligibility remains a live entitlement decision.
-
-The live route has 15 operations across separate read and action tools, including inferred
-field discovery and original-task recovery. The Router must discover the live tools and schemas
-before naming or invoking them.
+Text processing, including cleaning and labeling collected data, goes to EveryAI (the AI API, free
+for accounts that have topped up). The former data cleanup tools were retired on 2026-10-09.
 
 A routing decision with one product per operation, the discovery step, required inputs, side effects and any blocked prerequisite. A plan is not proof that the later operations have succeeded.
 

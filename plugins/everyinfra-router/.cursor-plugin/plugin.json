@@ -1,7 +1,7 @@
 {
   "name": "everyinfra-router",
-  "version": "0.2.0",
-  "description": "EveryInfra API router for data, source-bound cleanup, search, AI, captcha, email, number and proxy workflows with live discovery.",
+  "version": "0.3.0",
+  "description": "EveryInfra API router for data, search, AI, captcha, email, number and proxy workflows with live discovery.",
   "author": {
     "name": "EveryInfra",
     "url": "https://everyinfra.com"
@@ -16,7 +16,6 @@
     "agent-routing",
     "mcp",
     "api-discovery",
-    "data-cleanup",
     "developer-tools",
     "codex",
     "claude-code",
