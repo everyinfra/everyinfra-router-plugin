@@ -1,5 +1,8 @@
 # EveryInfra Router：基础设施能力路由
 
+<!-- rq223-banner -->
+<p align="center"><img alt="EveryInfra Router：为智能体任务挑对基础设施接口" src="assets/banner-zh.jpg" width="100%"></p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">

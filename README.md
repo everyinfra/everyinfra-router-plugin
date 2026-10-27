@@ -1,5 +1,8 @@
 # EveryInfra Router — Choose the right infrastructure API for an agent task
 
+<!-- rq223-banner -->
+<p align="center"><img alt="EveryInfra Router — Choose the right infrastructure API for an agent task" src="assets/banner-en.jpg" width="100%"></p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
